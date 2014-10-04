@@ -1,0 +1,9 @@
+{
+    "name": "johnny-test",
+    "description": "",
+    "dependencies": {
+        "johnny-five": "*",
+        "express": "*",
+        "ejs": "*"
+    }
+}

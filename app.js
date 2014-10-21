@@ -1,13 +1,8 @@
-var Robot = require('./robot');
+//var Robot = require('./robot');
+var robot = {a: 1};
+module.exports.robot = robot;
 
-var express = require('express');
-var app = express();
+var app = require('./server');
+var socket = require('./socket');
 
-app.set('view engine', 'ejs');
-app.engine('html', require('ejs').renderFile);
-
-app.get('/', function(req, res){
-    res.render('index', { title: 'The index page!' })
-});
-
-app.listen(3000);
+module.exports.app = app;

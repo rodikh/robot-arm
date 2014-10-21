@@ -3,9 +3,15 @@
  */
 
 var five = require("johnny-five");
-var board = new five.Board({port: 'COM4'});
+var devicePort = 'COM4';
+var board = new five.Board({port: devicePort});
+
 
 board.on("ready", function() {
+    if (!this.io.pins.length) {
+        console.error('No board/pins found at ' + devicePort);
+        return;
+    }
     var robot = new Robot(five);
     this.repl.inject({
         robot: robot

@@ -4,6 +4,7 @@
     "dependencies": {
         "johnny-five": "*",
         "express": "*",
+        "socket.io": "*",
         "ejs": "*"
     }
 }

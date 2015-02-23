@@ -1,8 +1,8 @@
-//var Robot = require('./robot');
-var robot = {a: 1};
-module.exports.robot = robot;
+var Robot = require('./robot');
+//var robot = {a: 1};
+//module.exports.robot = robot;
 
-var app = require('./server');
-var socket = require('./socket');
+//var app = require('./server');
+//var socket = require('./socket');
 
-module.exports.app = app;
+//module.exports.app = app;

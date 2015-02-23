@@ -3,7 +3,7 @@
  */
 
 var five = require("johnny-five");
-var devicePort = 'COM4';
+var devicePort = '/dev/tty.usbmodem1451';
 var board = new five.Board({port: devicePort});
 
 
@@ -14,7 +14,9 @@ board.on("ready", function() {
     }
     var robot = new Robot(five);
     this.repl.inject({
-        robot: robot
+        a: robot.base,
+        b: robot.first,
+        c: robot.second
     });
 });
 

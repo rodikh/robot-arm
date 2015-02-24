@@ -5,6 +5,8 @@
         "johnny-five": "*",
         "express": "*",
         "socket.io": "*",
-        "ejs": "*"
+        "ejs": "*",
+        "keypress": "*",
+        "bluetooth-serial-port": "*"
     }
 }

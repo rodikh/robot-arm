@@ -1,4 +1,4 @@
-var Robot = require('./robot');
+//var Robot = require('./robot');
 //var robot = {a: 1};
 //module.exports.robot = robot;
 
@@ -6,3 +6,5 @@ var Robot = require('./robot');
 //var socket = require('./socket');
 
 //module.exports.app = app;
+
+var Bluetooth = require('./bluetooth');
